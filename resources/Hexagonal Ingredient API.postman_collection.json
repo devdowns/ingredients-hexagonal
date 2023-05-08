@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "5989f7d1-e7c8-4dd2-ba10-fd68ac308585",
+		"name": "Hexagonal Ingredient API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7653050"
+	},
+	"item": [
+		{
+			"name": "ALL ✓",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/ingredient",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"ingredient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE ✓",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"truffle\",\n    \"description\":\"french white truffle\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/ingredient",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"ingredient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BY ID ✓",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/ingredient/e3bfc019-354b-4242-bad7-874cae4ba85a",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"ingredient",
+						"e3bfc019-354b-4242-bad7-874cae4ba85a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE ✓",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"fd12a577-9dc9-4e07-846f-65a8e3fe0c3e\",\n    \"name\":\"corn flour\",\n    \"description\":\"all purpose\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/ingredient",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"ingredient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BY ID ✓",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/ingredient/b37b4e51-1f84-4af1-8297-3bf39b00a2eb",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"ingredient",
+						"b37b4e51-1f84-4af1-8297-3bf39b00a2eb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
